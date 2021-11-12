@@ -5,7 +5,7 @@ const CHARS = "[a-zA-Z]{1}";
 
 //Expresiones regulares.
 let numerosExpresion = new RegExp(NUMEROS + "(.?" + NUMEROS + "*)");
-let cadenaExpresion = new RegExp(NUMEROS+"+\D|(" + LETRAS + "+" + NUMEROS + "*)+|");
+let cadenaExpresion = new RegExp(NUMEROS+"+("+LETRAS+"+)|(" + LETRAS + "+" + NUMEROS + "*)+");
 
 let caracter = new RegExp(CHARS);
 let booleana = new RegExp("TRUE|FALSE|true|false");
