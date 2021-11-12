@@ -27,7 +27,7 @@ button.addEventListener("click", (e) => {
       "Ejmplo de uso: true && "+text;
     return;
   }
-  if (cadenaExpresion.test(text)) {
+  if (cadenaExpresion.test(text) && text.length > 1) {
     mensaje.innerText =
       "Es una Cadena:\n" + "Puedes hacer, concatenaciones\n"+
       "Ejemplo de uso: "+text+" + "+ text +" = "+text+text;
